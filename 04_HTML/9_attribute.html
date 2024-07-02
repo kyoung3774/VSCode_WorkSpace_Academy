@@ -43,7 +43,24 @@
   <!-- class보다는 사용 빈도가 낮음(특히 React에서는 사용 안함) -->
   <span id="abc">동해물</span>과 <span class="red">백두산</span>이 마르고 닳도록
   하느님이 보우하사 <span class="red">우리나라</span> 만세
+  <hr>
 
+  <!-- data: 요소에 데이터ㅡㄹ 저장하는 용도(사용자 정의 속성을 만듦) -->
+  <!-- JS애서 이 속성에 저장한 데이터를 꺼내서 이용 가능 -->
+  <!-- 사용법: data-작명="데이터" -->
+
+  <div data-fruit_name="apple">사과</div>
+  <div data-fruit_name="banana">바나나</div>
+
+  <script>
+    // div 태그를 모두 찾아서 elements 라는 변수에 저장(요소가 다수 이면 배열로 저장)
+    const elements = document.querySelectorAll('div');
+    console.log(elements)
+    //찾은 요소들을 하나씩 반복해가면서 element에 다시 담고
+    elements.forEach(element => {
+      console.log(element.dataset.fruit_name);
+    });
+  </script>
 </body>
 
 </html>
