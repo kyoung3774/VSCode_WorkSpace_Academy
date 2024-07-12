@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      height: 10000px;
+    }
+
+    .grandparent {
+      width: 800px;
+      height: 550px;
+      background-color: rgb(167, 98, 167);
+    }
+
+    .parent {
+      width: 600px;
+      height: 350px;
+      background-color: royalblue;
+    }
+
+    .child-1 {
+      width: 250px;
+      height: 150px;
+      background-color: orange;
+    }
+
+    .child-2 {
+      width: 350px;
+      height: 250px;
+      background-color: olive;
+
+      /* fixed: 뷰포트를 기준으로 배치(화면을 스크롤해도 요소 위치가 고정) */
+      position: fixed;
+      /* 이전 위치는 완전한 빈값이됨 */
+      bottom: 30px;
+      right: 60px;
+    }
+
+    .child-3 {
+      width: 250px;
+      height: 300px;
+      background-color: tomato;
+    }
+
+    /* 사용처: 고정 헤더, 광고 배너, 최근 본 상품, 최상단 이동 버튼 */
+  </style>
+</head>
+
+<body>
+  <div class="grandparent">
+    <div class="parent">
+      <div class="child-1">1</div>
+      <div class="child-2">2</div>
+      <div class="child-3">3</div>
+    </div>
+  </div>
+</body>
+
+</html>

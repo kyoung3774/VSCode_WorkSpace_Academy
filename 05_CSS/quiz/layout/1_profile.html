@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div.profile {
+      /* 이미지 가운데 정렬: 부모요소에 text-align: center 속성,값 주기 */
+      /* text-align: center; */
+    }
+
+    div.profile>img {
+      /* (참고) img태그는 인라인 요소이지만, 가로/세로 길이 지정 가능 */
+      width: 100px;
+      /* 요소를 원으로 만들기 */
+      border-radius: 50%;
+      /* 이미지 가운데 정렬: display: block /  margin: 0 auto; */
+      display: block;
+      margin: 0 auto;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .content {
+      text-align: center;
+    }
+
+    .red {
+      color: red;
+      font-weight: 700;
+    }
+
+    div.box {
+      width: 450px;
+      color: white;
+      background-color: royalblue;
+      border-radius: 5px;
+      margin: 0 auto;
+      padding: 20px 0;
+      text-align: center;
+      white-space: pre;
+      box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- div.profile>img -->
+  <div class="profile">
+    <img src="../../images/logo.png" alt="사진">
+  </div>
+  <!-- h3.title -->
+  <h3 class="title">Goni Kim</h3>
+  <!-- p.content -->
+  <p class="content">
+    <span class="red">Full Stack</span> Developer
+  </p>
+  <!-- div.box -->
+  <div class="box">
+    안녕하세요. GOnu Kim입니다.
+    현재 웹 프론트엔드/백엔드 교강사로 활동중이며
+    취미는 배드민턴을 치는 것입니다.
+  </div>
+</body>
+
+</html>
