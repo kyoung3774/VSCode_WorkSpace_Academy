@@ -46,6 +46,55 @@
       width: 80%;
       max-width: 600px;
       background-color: white;
+      padding: 30px;
+      margin: 0 auto;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 10px;
+      font-size: 20px;
+      border: 2px solid #eee;
+      border-radius: 6px;
+      outline: none;
+      transition: 0.5s;
+    }
+
+    .form-input:focus {
+      border-color: #aaa;
+    }
+
+    .name-box {
+      display: flex;
+    }
+
+    .name-box>div:first-child {
+      width: 50%;
+      padding: 10px 10px 10px 0px;
+    }
+
+    .name-box>div:last-child {
+      width: 50%;
+      padding: 10px 0 10px 10px;
+    }
+
+    .btn-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn-send {
+      padding: 8px 40px;
+      color: #eee;
+      background-color: lightsalmon;
+      border: none;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    .btn-send:hover {
+      background-color: tomato;
     }
   </style>
 </head>
@@ -71,45 +120,43 @@
     <div class="form-container">
       <form>
         <h3>Contact US</h3>
-        <div class="form-email">
-          <p>
-            <label for="email">Your Email</label>
-          </p>
-          <input type="text" id="email">
-        </div>
-        <div class="form-fullName">
-          <div class="form-firstName">
+
+        <p>
+          <label for="email">Your Email</label>
+        </p>
+        <input type="email" id="email" class="form-input" placeholder="email@example.com">
+
+        <div class="name-box">
+          <div class="first-name-box">
             <p>
               <label for="first-name">First Name</label>
             </p>
-            <input type="text" id="first-name">
+            <input type="text" id="first-name" class="form-input">
           </div>
-          <div class="form-lastName">
+
+          <div class="last-name-box">
             <p>
               <label for="last-name">Last Name</label>
             </p>
-            <input type="text" id="last-name">
+            <input type="text" id="last-name" class="form-input">
           </div>
         </div>
-      </form>
-      <div class="form-messge">
+
         <p>
-          <label for="messger">Messge</label>
+          <label for="msg">Messge</label>
         </p>
-        <textarea name="" id="messger"></textarea>
-      </div>
-      <div class="form-foot">
-        <div class="form-check">
-          <p>
-            <label for="chec-kbox">Agree</label>
-          </p>
-          <input type="checkbox" id="chec-kbox">
+        <textarea id="msg" class="form-input"></textarea>
+
+        <div class="btn-box">
+          <div>
+            <input type="checkbox" id="agree">
+            <label for="agree">Agree</label>
+          </div>
+          <button type="submit" class="btn-send">SEND</button>
         </div>
-        <div class="form-button">
-          <button>SEND</button>
-        </div>
-      </div>
+      </form>
     </div>
+  </div>
 </body>
 
 </html>
