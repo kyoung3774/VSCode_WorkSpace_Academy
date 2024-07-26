@@ -30,3 +30,36 @@ closeBtn.addEventListener('click',function () {
   // console.log('클릭됨');
   modalEl.style.display = 'none';
 });
+
+// 현재 연도 표시
+// 날짜 정보를 가진 JS의 Date 객체를 활용
+new Date().getFullYear(); // 현재 연도 정보가 숫자 데이터로 반환됨
+console.log(new Date().getFullYear());
+
+let thisYear = document.querySelector('.this-year');
+thisYear.textContent = new Date().getFullYear();
+
+// 페이지 최상단으로 이동
+let toTopBtn = document.querySelector('#to-top');
+console.log(toTopBtn);
+
+// 페이지의 스크롤 이벤트 감지를 추가
+// window: 브라우저 창 객체
+window.addEventListener('scroll', function() {
+  // console.log(window.scrollY); // Y축 스크롤 위치
+  
+  // 페이지 스크롤 위치가 500px을 넘으면 요소가 보이고,
+  // 500px이 넘지 않으면 요소 숨기기.
+
+  if(window.scrollY > 500) {
+    // toTopBtn.style.display = "flex"
+
+    toTopBtn.style.opacity = 1;
+    toTopBtn.style.transform = "translatex(0)"
+  } else {
+    // toTopBtn.style.display = "none"
+
+    toTopBtn.style.opacity = 0;
+    toTopBtn.style.transform = "translatex(100px)"
+  }
+})

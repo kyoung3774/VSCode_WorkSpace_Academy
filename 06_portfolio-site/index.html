@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<d>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BaeJooHwan PortFolio</title>
+
   <!-- 파비콘 적용 -->
   <!-- 파비콘(favicon.ico)은 프로젝트 폴더의 최상위(Root) 경로에 포함시키면 자동 적용
     최상위 경로에 없거나, ico가 아닌 별도 파일을 가진 경우에는 <link>로 적용
@@ -27,11 +28,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
-  
+
   <link rel="stylesheet" href="css/main.css">
 
   <!-- ScrollMagic -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+    integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script defer src="js/main.js"></script>
 </head>
@@ -41,6 +44,7 @@
   <!-- <span>헬로 월드!</span>
   <span class="font-en">Hello World!</span> -->
 
+
   <!-- HEADER -->
   <header>
     <div class="inner">
@@ -48,6 +52,7 @@
       <a href="index.html" class="logo">
         <img src="images/logo.png" alt="로고">
       </a>
+
 
       <!--메뉴 -->
       <nav class="font-en">
@@ -62,6 +67,7 @@
     </div>
   </header>
 
+
   <!-- VISUAL -->
   <!-- 배경 비디오 적요(또는 슬라이드로 만들고 싶으면 swiper 참고) -->
   <section class="visual">
@@ -69,6 +75,7 @@
       <source src="videos/movie2.mp4" type="video/mp4">
     </video>
   </section>
+
 
   <!-- ABOUT -->
   <section id="about" class="about">
@@ -93,6 +100,7 @@
         </div>
       </div>
 
+
       <!-- 연락처 버튼 -->
       <div class="about_btn font-en">
         <a href="#contact">
@@ -101,6 +109,7 @@
       </div>
     </div>
   </section>
+
 
   <!-- SKILL -->
   <section id="skill" class="skill scroll-spy">
@@ -172,6 +181,7 @@
     </div>
   </section>
 
+
   <!-- WORK -->
   <section id="work" class="work font-en">
     <div class="inner">
@@ -216,13 +226,62 @@
     </div>
   </section>
 
-  <!-- MODAL -->
-  <div id="modal">
-    <div class="modal_inner">
-      <img src="images/work_4.jpg" alt="샘플">
-      <span class="material-symbols-outlined btn-close">close</span>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact font-en scroll-spy">
+    <div class="inner">
+      <h2 class="title">CONTACT</h2>
+      <div class="contact_info">
+        <ul>
+          <li><a href="#https://github.com/kyoung3774">ginhub 주소</a></li>
+          <li>010-3774-2409</li>
+          <li>kyoung3774@naver.com</li>
+        </ul>
+      </div>
+      <div class="contact_sns">
+        <ul>
+          <li>
+            <a href="인스타그램 주소" target="_blank">
+              <img src="images/icon/icon_insta.png" alt="인스타그램">
+            </a>
+          </li>
+          <li>
+            <a href="유튜브 주소" target="_blank">
+              <img src="images/icon/icon_youtube.png" alt="유튜브">
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
+    </select>
+
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="inner">
+        <p class="copyright">
+          &copy;<span class="this-year"></span>
+          배주환. <span class="font-en">All Rights Reserved.</span>
+        </p>
+      </div>
+    </footer>
+
+
+    <!-- MODAL -->
+    <div id="modal">
+      <div class="modal_inner">
+        <img src="images/work_4.jpg" alt="샘플">
+        <span class="material-symbols-outlined btn-close">close</span>
+      </div>
+    </div>
+
+
+    <!-- SCRLL TO TOP -->
+    <div id="to-top">
+      <a href="#">
+        <span class="material-symbols-outlined">arrow_upward</span>
+      </a>
+    </div>
 </body>
 
 </html>
