@@ -1,0 +1,48 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: aliceblue;
+  line-height: 1.6;
+  overflow-x: hidden;
+
+}
+
+.font-en {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main_page{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.815);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu_choice_box{
+  width: 750px;
+  height: 750px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.box_up{
+  display: flex;
+}
+
+.box_down{
+  display: flex;
+}
