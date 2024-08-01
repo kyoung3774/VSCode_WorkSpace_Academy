@@ -8,8 +8,7 @@ body {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: aliceblue;
-  line-height: 1.6;
+  color: white;
   overflow-x: hidden;
 
 }
@@ -23,26 +22,121 @@ a {
   color: inherit;
 }
 
-.main_page{
+.head_line{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50px;
+}
+
+.menu_btn ul{
+  display: flex;
+}
+
+.menu_btn ul li:nth-child(1):hover{
+  opacity: 0.6;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.menu_btn ul li:nth-child(2):hover{
+  opacity: 0.6;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.menu_btn ul li:nth-child(3):hover{
+  opacity: 0.6;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.menu_btn ul li:nth-child(4):hover{
+  opacity: 0.6;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.menu_btn ul li:nth-child(5):hover{
+  opacity: 0.6;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+
+.menu_btn ul li{
+  width: 50px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  opacity: 0.3;
+}
+
+.main_background{
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.815);
+  background-color: black;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-.menu_choice_box{
-  width: 750px;
-  height: 750px;
-  border: 1px solid white;
-  border-radius: 5px;
+.main_page-1>:first-child{
+  font-size: 200px;
+  color: black;
+  text-align: center;
+  padding-top: 100px;
 }
 
-.box_up{
-  display: flex;
+.main_page-1>:last-child{
+  text-align: center;
+  margin-top: 50px;
 }
 
-.box_down{
-  display: flex;
+.main_page-1>:last-child>span{
+  font-size: 350px;
+  color: black;
 }
+.main_page-1{
+  width: 100%;
+  height: 75%;
+  background-color: #f2f0d9;
+  position: absolute;
+}
+
+.main_page-2{
+  width: 100%;
+  height: 75%;
+  background-color: #f6c039;
+  position: absolute;
+  display: none;
+  
+}
+
+.main_page-3{
+  width: 100%;
+  height: 75%;
+  background-color: #106aa9;
+  position: absolute;
+  display: none;
+}
+
+.main_page-4{
+  width: 100%;
+  height: 75%;
+  background-color: #e8b4b4;
+  position: absolute;
+  display: none;
+}
+
+.main_page-5{
+  width: 100%;
+  height: 75%;
+  background-color: #077b3d;
+  position: absolute;
+  display: none;
+}
+
