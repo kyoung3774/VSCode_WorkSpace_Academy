@@ -13,8 +13,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
-  color: #333;
-  background-color: #fff8e8;
+  color: wheat;
+  background-color: #333;
   overflow-x: hidden;
 }
 
@@ -30,7 +30,8 @@ a {
 
 .inner {
   /* 고정값 길이(width = 고정형) */
-  max-width: 1200px; /* 최대값 길이(max-wudth = 반응형) */
+  max-width: 1200px;
+  /* 최대값 길이(max-wudth = 반응형) */
   margin: 0 auto;
 }
 
@@ -53,28 +54,32 @@ img {
   padding: 10px;
   display: block;
   /* a, span 같은 인라인 요소를 버튼으로 사용할 수도 있이니 블록으로 지정*/
-  border: 2px solid #333;
+  border: 2px solid wheat;
   border-radius: 4px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: bold;
   text-align: center;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 
 .btn:hover {
-  background-color: #333;
-  color: #fff;
+  background-color: wheat;
+  border: 2px solid ;
+  color: #592b18;
 }
 
 .btn.btn--brown {
   color: #592b18;
   border-color: #592b18;
+  background-color: wheat;
+  font-weight: bold;
 }
 
 .btn.btn--brown:hover {
-  color: #fff;
+  color: wheat;
   background-color: #592b18;
+  border-color: wheat;
 }
 
 
@@ -92,7 +97,7 @@ img {
 
 /* HEADER */
 header {
-  background-color: white;
+  background-color: #333;
   border-bottom: 1px solid hsl(0, 0%, 78%);
   /* 고정된 헤더 만들기 */
   width: 100%;
@@ -123,10 +128,19 @@ header nav ul li {
 }
 
 header nav ul li a:hover {
-  color: orange;
+  color: rgb(255, 166, 0);
   /* text-shadow: 1px 1px 5px #333; */
 }
 
+header .btn-hamburger {
+  display: none;
+}
+
+header .btn-hamburger .material-symbols-outlined {
+  color: wheat;
+  font-size: 40px;
+  line-height: normal;
+}
 
 /* VISUAL */
 .visual {
@@ -274,7 +288,8 @@ header nav ul li a:hover {
 .skill .skill_list>li div {
   width: 100px;
   height: 50px;
-  background-color: #b9e3f9;
+  background-color: wheat;
+  color: #333;
   border-radius: 50%;
   transform: rotate(-20deg);
   transition: 0.5s;
@@ -371,10 +386,11 @@ header nav ul li a:hover {
   transform: translateX(-150px);
 }
 
-.contact.show .contact_info li{
+.contact.show .contact_info li {
   opacity: 1;
   transform: translateX(0);
 }
+
 .contact .contact_sns {
   margin-top: 20px;
 }
@@ -411,7 +427,7 @@ header nav ul li a:hover {
 
 
 /* FOOTER */
-footer .copyright{
+footer .copyright {
   text-align: center;
   font-weight: 600;
   line-height: 200px;
@@ -463,8 +479,8 @@ footer .copyright{
 #to-top {
   width: 42px;
   height: 42px;
-  background-color: #fff8e8;
-  border: 2px solid #333;
+  background-color: wheat;
+  color: #333;
   border-radius: 10px;
   cursor: pointer;
   display: flex;
@@ -479,4 +495,121 @@ footer .copyright{
   /* 처음 상태는 투명에서 x축으로 +100px 지점 */
   opacity: 0;
   transform: translateX(100px);
+}
+
+/* 반응형 */
+@media screen and (max-width: 768px) {
+
+  /* 모바일에서는 화면의 80%만 차지하도록 */
+  .inner {
+    width: 80%;
+  }
+
+  .title {
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+
+  .title::after {
+    width: 60px;
+  }
+
+  header .btn-hamburger {
+    display: block;
+  }
+
+  header nav {
+    /* nav 디자인 및 배치 */
+    background-color: wheat;
+    color: #333;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    /* display: none; */
+    height: 0;
+    transition: 0.2s;
+    overflow: hidden;
+  }
+
+  header div a span {
+    color: wheat;
+  }
+
+  header nav.active {
+    /* display: block; */
+    height: 100%;
+  }
+
+  header nav ul {
+    display: block;
+    padding-top: 60px;
+  }
+
+  header nav ul li {
+    padding: 10px 80px;
+    font-size: 30px;
+
+  }
+
+  header nav ul li a {
+    transition: 0.2s;
+  }
+
+  header nav ul li:hover {
+    letter-spacing: 20px;
+  }
+
+  .about {
+    padding-top: 100px;
+  }
+
+  .about .about_wrapper {
+    flex-direction: column;
+  }
+
+  .about .about_wrapper .about_img {
+    width: 100%;
+  }
+
+
+  .about .about_wrapper .about_text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .skill {
+    padding-top: 100px;
+  }
+
+  .skill .skill_list {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .work {
+    padding-top: 100px;
+  }
+
+  .work .port{
+    flex-direction: column;
+    margin: 40px 0;
+  }
+
+  .work .port .port_img,
+  .work .port .port_text{
+    width: 100%;
+  }
+
+  .work .port .port_text{
+    padding: 20px 0 0;
+  }
+
+  .work .port .btn-group{
+    margin-top: 20px;
+  }
+
+  .contact {
+    padding-top: 100px 0;
+  }
 }
