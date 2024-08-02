@@ -113,7 +113,8 @@ img {
 
 .main_page-2>.about_box {
   display: flex;
-  justify-content: space-around
+  justify-content: space-around;
+  position: relative;
 }
 
 .about_box>.about_img {
